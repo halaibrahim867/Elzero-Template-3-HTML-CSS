@@ -1,3 +1,4 @@
+/*Start Golbal rules*/
 *{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -45,3 +46,20 @@ ul {
       width: 1170px;
     }
 }
+/*End global rules*/
+/*Start header*/
+.header {
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+/*End header*/
