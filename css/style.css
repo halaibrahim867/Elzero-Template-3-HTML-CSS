@@ -155,4 +155,11 @@ ul {
       display: none;
     }
 }
+.header .mega-menu .links {
+    min-width: 250px;
+    flex: 1;
+}
+  .header .mega-menu .links li {
+    position: relative;
+}
 /*End header*/
