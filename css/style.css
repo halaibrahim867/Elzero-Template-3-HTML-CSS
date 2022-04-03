@@ -1230,7 +1230,44 @@ pricing .box.popular .label::before {
     opacity: 0.8;
     transition: var(--main-transition);
 }
-
+.stats .box::before,
+.stats .box::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--main-color);
+  transition: 1s;
+  height: 0;
+}
+.stats .box::before {
+    top: 0;
+    right: 0;
+}
+.stats .box::after {
+    left: 0;
+    bottom: 0;
+}
+.stats .box:hover {
+    opacity: 1;
+}
+.stats .box:hover::before,
+.stats .box:hover::after {
+  height: 100%;
+}
+.stats .box .number {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.stats .box .text {
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End Stats */
 /*Start Animation*/
 @keyframes up-and-down {
     0%,
